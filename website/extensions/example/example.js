@@ -16,6 +16,7 @@ ExampleExtension.prototype.Init = function (extensionInterface)
 	var buttonImage = $('<img>').addClass ('topbutton').attr ('src', 'extensions/example/example.png').attr ('title', 'Example button.').appendTo (buttonsDiv);
 	var myThis = this;
 	buttonImage.click (function () {
-		alert (JSON.stringify (myThis.ext.GetModelJson ()));
+	//	alert (JSON.stringify (myThis.ext.GetModelJson ()));
+		console.log( JSON.stringify( myThis.ext.GetModelJson() ) );
 	});
 };
