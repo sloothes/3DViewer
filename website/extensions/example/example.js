@@ -17,6 +17,7 @@ ExampleExtension.prototype.Init = function (extensionInterface)
 	var myThis = this;
 	buttonImage.click (function () {
 	//	alert (JSON.stringify (myThis.ext.GetModelJson ()));
-		console.log( JSON.stringify( myThis.ext.GetModelJson() ) );
+		console.log( myThis.ext.GetModelJson() );
+	//	console.log( JSON.stringify( myThis.ext.GetModelJson() ) );
 	});
 };
